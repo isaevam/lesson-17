@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Lesson 17</title>
+  <link media="all" rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  JS
+  <div class="container">
+    <input type="text" id="inputString" value="my name is taras">
+    <div class="button">
+      <button onclick="capitalize()">Capitalize</button>
+    </div>
+    <input type="text" id="outputString" value="Result">
+  </div>
+
+  <div class="container">
+    <input type="text" id="inputText" value="Lorem ipsum dolor sit amet, consectetur">
+    <input type="text" id="inputMaxlenght" value="14">
+    <div class="button">
+      <button onclick="truncate()">Truncate</button>
+    </div>
+    <input type="text" id="outputText" value="Result">
+  </div>
+
+  <div class="container">
+    <input type="text" id="inputArray" value="1, 2, 3, 4, 5, 6, 7, 8, 9">
+    <input type="text" id="inputFrom" value="3">
+    <input type="text" id="inputTo" value="7">
+    <div class="button">
+      <button onclick="filterRange()">Filter range</button>
+    </div>
+    <input type="text" id="outputFilterArray" value="Result">
+  </div>
+
+  <div class="container">
+    <input type="text" id="inputArr" value="324, 32423, -3242, 544, 0, 23, -454, 22, 4">
+    <div class="button">
+      <button onclick="sortArr()">Sort array</button>
+    </div>
+    <input type="text" id="outputSortArr" value="Result">
+  </div>
+
+  <div class="container">
+    <input type="text" id="inputArrStr" value='"4534", "a" , "bb", "sdfds", "", " ", "r4rdv-"'>
+    <div class="button">
+      <button onclick="sortArrStr()">Sort array by lenght</button>
+    </div>
+    <input type="text" id="outputSortArrStr" value="Result">
+  </div>
+
+  <div class="container">
+    <textarea id="inputObject">
+    [{ "name": "John", "age": 25 },
+    { "name": "Pete", "age": 30 },
+    { "name": "Mary", "age": 29 },
+    { "name": "Taras", "age": 25 },
+    { "name": "Kate", "age": 74 },
+    { "name": "Chris", "age": 14 },
+    { "name": "Alan", "age": 5 },
+    { "name": "Boris", "age": 55 },
+    { "name": "Elizabeth", "age": 48 }]</textarea>
+    <div class="button">
+      <button onclick="averageAge()">Calculate average age</button>
+    </div>
+    <input type="text" id="outputAveraAge" value="Result">
+  </div>
+
+  <div class="container">
+    <textarea id="inputArrayName">
+    [{ "name": "John", "age": 25 },
+    { "name": "John", "age": 5 },
+    { "name": "John", "age": 2 },
+    { "name": "John", "age": 45 },
+    { "name": "Pete", "age": 30 },
+    { "name": "Mary", "age": 29 },
+    { "name": "Mary", "age": 2 },
+    { "name": "Taras", "age": 25 },
+    { "name": "Taras", "age": 19 },
+    { "name": "Kate", "age": 74 },
+    { "name": "Chris", "age": 14 },
+    { "name": "Alan", "age": 5 },
+    { "name": "Alan", "age": 32 },
+    { "name": "Boris", "age": 55 },
+    { "name": "Elizabeth", "age": 48 },
+    { "name": "Elizabeth", "age": 8 }]</textarea>
+    <div class="button">
+      <button onclick="sortUsers()">Sort array by name</button>
+    </div>
+    <span id="outputSortName">Result</span>
+  </div>
+
+  <div class="container">
+    <textarea id="inputMinMaxAge">
+    [{ "name": "John", "age": 25 },
+    { "name": "Pete", "age": 30 },
+    { "name": "Mary", "age": 29 },
+    { "name": "Taras", "age": 25 },
+    { "name": "Kate", "age": 74 },
+    { "name": "Chris", "age": 14 },
+    { "name": "Alan", "age": 5 },
+    { "name": "Boris", "age": 55 },
+    { "name": "Elizabeth", "age": 48 }]</textarea>
+    <div class="button">
+      <button onclick="minMaxAge()">Find min and max</button>
+    </div>
+    <input type="text" id="outputMinMaxAge" value="Result">
+  </div>
+
+  <div class="container">
+    <textarea id="inputValues">"Привіт","Світ","Привіт","Світ","Привіт","Привіт","Світ","Світ",":-O"</textarea>
+    <div class="button">
+      <button onclick="unique()">Save only unique values</button>
+    </div>
+    <input type="text" id="outpuUniqueValues" value="Result">
+  </div>
+  <script src="./index.js"></script>
 </body>
+
 </html>
