@@ -101,7 +101,7 @@ const minMaxAge = (
   const arr = JSON.parse(strInput);
   const age = arr.reduce(
     (acc, item) => {
-      if (item.age > acc.min) {
+      if (item.age < acc.min) {
         acc.min = item.age;
       }
       if (item.age > acc.max) {
